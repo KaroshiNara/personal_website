@@ -1,0 +1,31 @@
+ body {
+     background-color: #8B00FF;
+     color: white;
+ }
+ .c1 {
+    font-size: 25px;
+    text-align: center;
+    
+ }
+.c2 {
+    font-size: 45px;
+    text-align: center;
+}
+ .c3 {
+     font-size: 25px;
+     text-align: center;
+ }
+ .text {
+     font-size: 20px;
+ }
+ a:link, a:visited {
+    background-color: white;
+    color: #8B00FF;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  a:hover, a:active {
+    background-color: purple;
+    color: white;
+  }

@@ -7,12 +7,26 @@
     <body>
 <!--This part is for Scroll Indicator-->
 <div class="header">
-  <h2>Welcome Everyone On My Page</h2>
+  <strong>
+    <div class="naruto">"Hardwork is worthless for those who don't believe in Themselves" — Naruto Uzumaki</div>
+  </strong>
+  <!-- Theme Toggle -->
+  <p>
+    <strong>
+      <div class="navbar">
+        <a href="about-me.html" target="_blank">About Me</a>
+        <a href="https://github.com/Its-Wizard/c-programs" target="_blank">C Programs</a>
+        <a onclick="themeFunction()">Click Here To Toggle Theme</a>
+    </div>
+    </strong>
+  </p>
+  <p>To Make it proper<br></p>
+<!----------------------->
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>  
 </div>
-<!--This part is for the Flip Box-->
+<!-- This part is for the Flip Box -->
 <div class="container">
   <div class="center">
     <div class="flip-box">
@@ -20,12 +34,9 @@
         <div class="flip-box-front">
           <p class="inside-box1"> <strong>Hello Everyone!<br>
             <br>Karoshi Here!<br>I am a Programmer & a Weeb too.<br>And this is my Webpage <(￣︶￣)></strong>
-          </p>
-          <p class="inside-box2">Hover your mouse here<br>to know my Real name.
-          </p>
         </div>
         <div class="flip-box-back">
-          <p class="inside-box3"><strong>Hi Everyone!<br>
+          <p class="inside-box2"><strong>Hi Everyone!<br>
             <br>My real name is Kartik Sharma. Karoshi is my Virtual Name. Well scroll down to find all the deatils about me.</strong>
           </p>
         </div>
@@ -35,27 +46,35 @@
 </div>
 <!--This is the Content Part-->
 <div class="content">
-  <div class="data-formatting">Click the button given below to switch between the Details about Virtual-Me & Real-Me (☆ᴗ☆)
+  <div class="data-formatting">Click the button given below to hide the excess information about the Virtual-Me<br>(☆ᴗ☆)
   </div>
 <br>
   <div class="container-button">
     <div class="center-button">
-      <button onclick="switchFunction()" class="btn click">Click Me !</button>
+      <button onclick="hideFunction()" class="btn click">Click Me !</button>
     </div>
   </div>
 <hr>
-  <div id="myDIV" class="data-formatting">Hello! My Name is Karoshi. I am the owner and maintener of this page.<br>Although I am a Newcomer in the field of programming and I have recently started learning programming, I am a Tech Geek and I love to learn about the stuffs related to technology and by the way I am Weeb too. I have watched numbers of Animes and I really like them. Well one of my hobbie (other than hunting for Tech Info) is Drawing but I only draw Anime characters.
+  <div id="myDIV" class="data-formatting">Hello There! My Name is Karoshi. I am the owner and maintener of this page.<br>Although I am a Newcomer in the field of programming and I have recently
+     started learning programming, I am a Tech Geek and I love to learn about the stuffs related to technology  & Programming. I just love that how a small device like our Smartphone can do such
+      amazing things. I also love to Customize the device which I use like applying themes and making it looks different & unique from other. I use Custom Roms and different Custom Apps inorder
+       to get different features. I am pretty thoughtful when it comes to customising and UI & UX designing and by the way I am Weeb too. I have watched numbers of Animes and I really like them.
+        Well one of my hobbie (other than hunting for some Latest & amazing Tech Info) is Drawing but I only draw Anime characters.
   </div>
 </div>
 <hr width="50%">
 <p class="social">Well If you are a Programmer or Learning Programming then join our Discord Server.
   <br><sub>(Click on the icon given below.)</sub>
 </p>
-<a href="https://discord.gg/2dkH7pkfK5" target="_blank"><img src="discord-square.png" height="70px" width="70px" class="button center-social"></a>
+<a href="https://discord.gg/2dkH7pkfK5" target="_blank">
+  <img src="discord-square.png" height="70px" width="70px" class="button center-social">
+</a>
 <p class="social">You can also Follow Me on Instagram.
   <br><sub>(Click on the icon given below.)</sub>
 </p>
-<a href="https://www.instagram.com/kartik_sharma_003/" target="_blank"><img src="instagram-logo.png" height="70px" width="70px" class="button center-social"></a>
+<a href="https://www.instagram.com/kartik_sharma_003/" target="_blank">
+  <img src="instagram-logo.png" height="70px" width="70px" class="button center-social">
+</a>
 <!----------This part is for Scroll Indicator Script------------------------------->
 <script>
 // When the user scrolls the page, execute myFunction 
@@ -67,14 +86,19 @@ function scrollFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-//Text----------------------------------------------------------------------
-function switchFunction() {
+// this is for Hide/Show Button-----------------------
+function hideFunction() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Hello! My Name is Karoshi. I am the owner and maintener of this page.<br>Although I am a Newcomer in the field of programming and I have recently started learning programming, I am a Tech Geek and I love to learn about the stuffs related to technology and by the way I am Weeb too. I have watched numbers of Animes and I really like them. Well one of my hobbie (other than hunting for Tech Info) is Drawing but I only draw Anime characters.") {
-    x.innerHTML = "Hi Everyone! I am Kartik Sharma. I am Programming Student. I am currently enrolled in Pt.DDUMC, Meerut and pursuing BCA from there. My college is Top college for pursuing BCA in whole Meerut. My Aim for Learning programming is to build an Operating System of my own for our Smartphones (an Non-Android OS to be more precise), and I am movng forward in order to achieve it. I know its a long way to go but believe me I will going to make it. Well I am also the Vice President of PI Club [Programming Incubation Club] of my college. Our Club Consist of Total of 10 Persons, who are Mr. Tushar Saxena (President), Me (Vice President) and 8 Other Excellent Members.";
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    x.innerHTML = "Hello! My Name is Karoshi. I am the owner and maintener of this page.<br>Although I am a Newcomer in the field of programming and I have recently started learning programming, I am a Tech Geek and I love to learn about the stuffs related to technology and by the way I am Weeb too. I have watched numbers of Animes and I really like them. Well one of my hobbie (other than hunting for Tech Info) is Drawing but I only draw Anime characters.";
+    x.style.display = "none";
   }
+}
+//Theme Toggle--------------------
+function themeFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
 </script>
 </body>
